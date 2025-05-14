@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Mi sitio web</title>
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <div class="logo"> Mi sitio</div>
+            <div id="nav-toggle">☰</div>
+            <ul>
+                <li> <a href="#">Inicio</a></li>
+                <li>
+                    <a href="#">Acerca de</a>
+                    <ul>
+                        <li><a href="#">Misión</a></li>
+                        <li><a href="#">Visión</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                    <ul>
+                        <li><a href="#">Diseño Web</a></li>
+                        <li><a href="#">Desarrollo</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Contactos</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Aquí irá el menu de navegación (paso 2) -->
+
+    <main>
+        <h1>Bienvenido a mi Sitio Web </h1>
+        <p>Contenido de ejemplo para el laboratorio</p>
+    </main>
+
+    <script>
+        const navToggle = document.getElementById('nav-toggle');
+        const navBar = document.getElementById('navbar');
+
+        navToggle.addEventListener('click', () => {
+            navBar.classList.toggle('nav-open');
+        })
+    </script>
+
+</body>
+
+</html>
